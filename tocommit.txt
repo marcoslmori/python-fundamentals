@@ -1,0 +1,15 @@
+tocommit.txt
+
+
+# Checar o repositorio
+git remote -v
+
+# Adicionar todos os arquivos novos em stage
+git add .
+
+# checar o status do stage
+git status
+
+# comittando
+git commit -m "meus exercicios"
+git push origin master
