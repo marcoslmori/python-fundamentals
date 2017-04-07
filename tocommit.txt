@@ -13,3 +13,8 @@ git status
 # comittando
 git commit -m "meus exercicios"
 git push origin master
+
+
+----- 
+documentacao
+https://docs.python.org/3/
