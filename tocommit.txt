@@ -18,3 +18,58 @@ git push origin master
 ----- 
 documentacao
 https://docs.python.org/3/
+
+ide legal
+pycharm
+
+
+nome da base - projeto
+senha do mysql 4linux-mori
+
+
+mysql -u admin -p
+Enter password: 4linux-mori
+
+sudo su
+su postgr	es
+psql
+\l -> mostrar databases
+\c projeto
+\d tabelas
+\d posts
+
+\du mostra os usuarios
+
+no postgres 
+criando uma tabela
+
+CREATE TABLE users (
+    id serial primary key,
+    usuario VARCHAR(255),
+    pass VARCHAR(255)
+);
+
+
+inserindo a senha
+INSERT INTO users (usuario, pass) VALUES('', '');
+
+mori/mori
+
+
+
+
+
+ORM --> PDO
+
+para sair \q
+
+mysql Workbench - tipo phpadmin
+
+para o postgres -> pgadmin
+
+para copiar da falta de sexta-feira
+https://github.com/xnegx/4linux-python-fundamentals/tree/master/HandsOn/Aula06
+
+professor
+https://github.com/Gamboua/python-fundamentals/tree/master/HandsOn/Aula06
+falta da sexta-feira	
