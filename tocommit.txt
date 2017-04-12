@@ -26,9 +26,18 @@ pycharm
 nome da base - projeto
 senha do mysql 4linux-mori
 
+para mudar a senha no mysql
+GRANT ALL PRIVILEGES ON projeto.* TO admin@localhost IDENTIFIED BY '4linux' WITH GRANT OPTION;
+
 
 mysql -u admin -p
 Enter password: 4linux-mori
+
+show databases;
+use projeto
+show tables
+
+
 
 sudo su
 su postgr	es
@@ -48,13 +57,12 @@ CREATE TABLE users (
     usuario VARCHAR(255),
     pass VARCHAR(255)
 );
-
+	
 
 inserindo a senha
 INSERT INTO users (usuario, pass) VALUES('', '');
 
 mori/mori
-
 
 
 
@@ -73,3 +81,76 @@ https://github.com/xnegx/4linux-python-fundamentals/tree/master/HandsOn/Aula06
 professor
 https://github.com/Gamboua/python-fundamentals/tree/master/HandsOn/Aula06
 falta da sexta-feira	
+gitlab
+http://devops.4linux.com.br:8082/
+!23Mudar
+
+
+mongodb
+-> varias collections
+---> tem documents (registros)
+-----> estrutura de dados 
+
+ganha performas --> banco de dados relacionais é custoso
+
+para acessar o mongo db 
+
+sudo service mongodb start
+mongo
+
+show databases
+
+
+> use devops
+switched to db devops
+
+> show tables
+cursos
+
+> show  collections
+
+> show tables
+cursos
+
+
+> db.createUser({"user": "administrador", "pwd": "4linux", "roles": ["readWrite", "dbAdmin"]})
+Successfully added user: { "user" : "administrador", "roles" : [ "readWrite", "dbAdmin" ] }
+
+
+> version()
+3.2.11
+> db.fila.insert({
+... "_id": 1,
+... "servico": "intranet",
+... "status": 0})
+
+
+WriteResult({ "nInserted" : 1 })
+> 
+
+
+
+busca
+> db.fila.find({})
+{ "_id" : 1, "servico" : "intranet", "status" : 0 }
+
+para apagar
+db.fila.remove({'_id': objectiID("fdakfjasjfka sdfdjfa")})
+
+
+> db.fila.find({'_id': 1, 'servico': 'intranet'})
+{ "_id" : 1, "servico" : "intranet", "status" : 0 }
+
+
+> db.fila.update({
+... '_id': 1},
+... {"$set": {"status": 1}});
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+
+instalacao do pymongo
+
+sudo pip install pymongo
+Requirement already satisfied: pymongo in /usr/local/lib/python2.7/dist-packages
+
+
