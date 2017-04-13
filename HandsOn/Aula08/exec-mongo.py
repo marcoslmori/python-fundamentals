@@ -63,17 +63,25 @@ Selecione a opcao: '''
         print 'lista usuarios'
         user = raw_input('Usuario: ')
         # mostrar = "SELECT * FROM users WHERE usuario LIKE '%%%s%%'" % user;
-        mostrar = db.fila.find({"usuario": user})
+        mostrar = db.fila.find({"nome": user})
 
         # cur.execute(mostrar)
         # usuario = cur.fetchone()
 
-        ## checar não funcionou
+        ## checar nao funcionou
 
         if mostrar.count() != 0: 
             print '==================='
             print 'Usuario: %s\nSenha: %s' %(mostrar[0]['nome'], mostrar[0]['senha'])
             print '==================='
+
+
+            # print '===================='
+            # print 'Usuario: %s\nSenha: %s' % (result[0]['usuario'], result[0]['senha'])
+            # print '===================='
+
+
+
 
     elif option == 4:
         os.system("clear")
