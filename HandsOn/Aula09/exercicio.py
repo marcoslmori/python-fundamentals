@@ -1,5 +1,5 @@
 
-# aula9 do teacher para verificar
+# aula9 do teacher para verificar o que deu errado
 
 import psycopg2
 

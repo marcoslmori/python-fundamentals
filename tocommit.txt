@@ -11,8 +11,8 @@ git add .
 git status
 
 # comittando
-git commit -m "meus exercicios"
-git push origin master
+sudo git commit -m "meus exercicios"
+sudo git push origin master
 
 
 ----- 
@@ -152,5 +152,16 @@ instalacao do pymongo
 
 sudo pip install pymongo
 Requirement already satisfied: pymongo in /usr/local/lib/python2.7/dist-packages
+
+
+
+sqlite
+
+acessar o banco
+sqlite3 banco.db
+sqlite> select * from usuarios;
+
+
+1|Mori
 
 
