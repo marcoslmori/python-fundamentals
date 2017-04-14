@@ -1,4 +1,4 @@
-exercicio3-postgress.py
+#exercicio3-postgress.py
 #exercicio criar uma lista com varios mais de 2 nomes  e insira todos de uma vez sim 
 
 from sqlalchemy import create_engine
@@ -7,7 +7,9 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 
-engine = create_engine('sqlite:///banco.db')
+# engine = create_engine('sqlite:///banco.db')
+engine = create_engine('postgresql://postgres:4linux-mori@localhost:5432/projeto')
+
 Base = declarative_base()
 
 class Usuario(Base):
